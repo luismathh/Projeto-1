@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Card Interativo</title>
+</head>
+
+<body>
+    <main>
+        <div class="titulo"><h1>Animais</h1></div>
+
+        <section class="mostrarDetalhes" id="mostrarDetalhes"></section>
+
+        <section class="interative-card">
+            <img id="animal-card" src="../assets/cachorro.jpg" alt="">
+        </section>
+
+        
+        <section class="btns">
+            <button class="btn btn--active" id="btn-1" >Gato</button>
+            <button class="btn" id="btn-2" >Cachorro</button>
+            <button class="btn" id="btn-3" >Leão</button>
+            <button class="btn" id="btn-4" >Tung Tung SAHUR</button>
+        </section>
+
+        <button class="btn" id="buttonModal">Ver Detalhes</button>
+        <div id="modal" class="modal">
+            <div class="modal-conteudo">
+                <h2>Informações</h2>
+                <p id="descricao">
+                    Aqui aparece a descrição do Animal
+                </p>
+
+                <button class="btn" id="fechar">
+                    Fechar
+                </button>
+            </div>
+        </div>
+    </main>
+
+    <script src="app.js"></script>
+</body>
+</html>
